@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+    
+    <title>
+        R&amp;M Portal Gun
+    </title>
+    
+
+    
+    
+
+    
+    
+        <link href=https://www.wesleymauk.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="Wesley Mauk" href="https://www.wesleymauk.com/atom.xml">
+
+    
+    
+    
+        <link rel="stylesheet" type="text/css" href="https://www.wesleymauk.com/theme/light.css"/>
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://www.wesleymauk.com/main.css />
+
+
+    
+</head>
+
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+        <a href=https:&#x2F;&#x2F;www.wesleymauk.com>Wesley Mauk</a>
+
+        <div class="socials">
+            
+            <a rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;WesleyM77&#x2F;" class="social">
+                <img alt=github src="/social_icons/github.svg">
+            </a>
+            
+            <a rel="me" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;wesley-mauk&#x2F;" class="social">
+                <img alt=linkedin src="/social_icons/linkedin.svg">
+            </a>
+            
+            <a rel="me" href="mailto:wesleym.psu@gmail.com" class="social">
+                <img alt=email src="/social_icons/email.svg">
+            </a>
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=&#x2F;posts style="margin-left: 0.7em">&#x2F;posts</a>
+        
+            <a href=&#x2F;projects style="margin-left: 0.7em">&#x2F;projects</a>
+        
+            <a href=&#x2F;about style="margin-left: 0.7em">&#x2F;about</a>
+        
+            <a href=&#x2F;resume style="margin-left: 0.7em">&#x2F;resume</a>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+<main>
+    <article>
+        <div class="title">
+            
+            
+    <div class="page-header">
+        R&amp;M Portal Gun<span class="primary-color" style="font-size: 1.6em">.</span>
+    </div>
+
+
+                <div class="meta">
+                    
+                        Posted on <time>2017-10-18</time>
+                    
+
+                    
+                </div>
+        </div>
+
+        
+
+        
+        
+
+        <section class="body">
+            <h2 id="the-goal">The Goal</h2>
+<p>To upgrade a Spirit Halloween Rick And Morty portal gun to have a real 14 segment display controlled by the button.</p>
+<h2 id="the-process">The Process</h2>
+<p>I used a 4 character, 14 segment display with a backpack that was pre-soldered. All the display needed was 5 connections, and I used some spare wire salvaged from an old computer cable. After installing the library from the product page, I wrote a quick script for a Teensy 3.2. When the button was pressed, the display would randomly generate a &quot;dimension&quot; number that would always have either one or two letters with the rest being numbers. If the button was held for three seconds, the display would show &quot;C137&quot;, which is the identifier for the main dimension from the show. I also made use of the green LEDs that were in the portal gun already (located in the tube and the front) and created a short animation that would play every time the button was pressed.</p>
+<p>To power the project, I had to add a third AA battery to the inside of the case to get in the 3.6V to 6V range required by the Teensy. In order to not have to open the case to replace this battery very often, I bent a paperclip and put a bit of electrical tape on it that fits between one of the positive battery connections. This means I can turn it on when I want to show it off to people, but can keep it mostly powered down to not drain the batteries.</p>
+<h2 id="lessons">Lessons</h2>
+<p>I had two issues with this project now that it is assembled. This project is rather daunting to disassemble and put back together as space is limited within the shell, and using a bit of force to get it to come together isn't really a good idea. The other issue is that there seems to be some bugs due to the poor solder connections I made. I thought I was just bad at soldering, but after getting a real soldering station later on, I realized that the soldering iron I used for this project didn't get hot enough to do a great job. This is salvaged though by the fact that the glitches rarely happen, and a restart usually fixes them. I'm okay with this concession since this is more of an art piece than something I would use every day.</p>
+<h2 id="result">Result</h2>
+<p><img src="/images/portalGun.jpg" alt="" /></p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+
+    </div>
+</body>
+
+</html>
