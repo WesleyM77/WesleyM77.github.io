@@ -95,8 +95,6 @@
 
                 <div class="meta">
                     
-                        Posted on <time>2021-02-02</time>
-                    
 
                     
                 </div>
@@ -118,7 +116,9 @@
 <h2 id="lessons">Lessons</h2>
 <p>I learned two main things from this project. The first that I should ALWAYS check the power requirements of the board before buying. The board I chose did not have direct power in except for USB or a battery pack through JST. Since this project was part of a modular synth with an internal power supply, I wasn't going to use a battery, so I ended up buying a simple USB module that I stuffed into my case and plugged in power through that. The second thing I learned was that there's probably a better way to step down voltage. I used a voltage regulator between the input jack and the arduino, but after some research I did after completing this project, I found that I should have used a clamping diode or voltage divider.</p>
 <h2 id="result">Result</h2>
-<p><a href="https://imgur.com/gallery/G0VANo6" target="_blank">Click here for imgur album with video</a></p>
+<a href="https://imgur.com/gallery/G0VANo6" target="_blank">
+    <img src="/images/hardG.gif" alt="Gif showing off the Hard G module at various angles and frames of animation">
+</a>
 
         </section>
 
@@ -129,6 +129,23 @@
 
 
     </div>
+
+    <style>
+    .copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
+}
+</style>
+
+<footer>
+    <div class="content">
+        <br/>
+        <br/>
+        <hr>
+        <p><span class="copyleft">&copy;</span> Copyleft 2023<script>new Date().getFullYear()>2023&&document.write("-"+new Date().getFullYear());</script> Wesley Mauk</p>
+        <p>Do what ever you want with the content on this website. Just credit me.</p>
+    </div>
+</footer> 
 </body>
 
 </html>
