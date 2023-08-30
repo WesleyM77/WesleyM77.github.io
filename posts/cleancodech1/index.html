@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+    
+    <title>
+        Clean Code: Chapter 1
+    </title>
+    
+
+    
+    
+
+    
+    
+        <link href=https://www.wesleymauk.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="Wesley Mauk" href="https://www.wesleymauk.com/atom.xml">
+
+    
+    
+    
+        <link rel="stylesheet" type="text/css" href="https://www.wesleymauk.com/theme/light.css"/>
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://www.wesleymauk.com/main.css />
+
+
+    
+</head>
+
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+        <a href=https:&#x2F;&#x2F;www.wesleymauk.com>Wesley Mauk</a>
+
+        <div class="socials">
+            
+            <a rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;WesleyM77&#x2F;" class="social">
+                <img alt=github src="/social_icons/github.svg">
+            </a>
+            
+            <a rel="me" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;wesley-mauk&#x2F;" class="social">
+                <img alt=linkedin src="/social_icons/linkedin.svg">
+            </a>
+            
+            <a rel="me" href="mailto:wesleym.psu@gmail.com" class="social">
+                <img alt=email src="/social_icons/email.svg">
+            </a>
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=&#x2F;posts style="margin-left: 0.7em">&#x2F;posts</a>
+        
+            <a href=&#x2F;projects style="margin-left: 0.7em">&#x2F;projects</a>
+        
+            <a href=&#x2F;about style="margin-left: 0.7em">&#x2F;about</a>
+        
+            <a href=&#x2F;resume style="margin-left: 0.7em">&#x2F;resume</a>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+<main>
+    <article>
+        <div class="title">
+            
+            
+    <div class="page-header">
+        Clean Code: Chapter 1<span class="primary-color" style="font-size: 1.6em">.</span>
+    </div>
+
+
+                <div class="meta">
+                    
+                        Posted on <time>2023-08-29</time>
+                    
+
+                    
+                </div>
+        </div>
+
+        
+
+        
+        
+
+        <section class="body">
+            <h2 id="intro">Intro</h2>
+<p>I received a book in the mail today, paid for by my employer: Clean Code by Robert C. Martin. It promises to be a hard read, a deep dive, and NOT a &quot;feel good&quot; book.
+I was just in the right mind set today to feel up for the challenge of consuming it. So that's what I'm doing: challenging myself to read, digest, and grow from this 
+book.</p>
+<p>I was also in just the right mind set to start (yet another) project to work through alongside this book. This project will remain unnamed for now, but a coworker (who
+actually pointed me to the guy to buy this book for me) mentioned the idea and I said I was going to build it. So here I am: building a stupid, yet fun little project to
+expand my skills.</p>
+<p>So, I want to keep notes as I read, talk about my thoughts, and put them down somewhere so I can come back to them. What better way that to put it on my website for
+all to see? </p>
+<h2 id="get-on-with-it">Get On With It!</h2>
+<p>Enough with the introductions, let's talk about the book! I read chapter 1 today (as well as the foreword). Let's first go over some of the sentences I 
+highlighted, and what I got from them.</p>
+<p><strong>&quot;Code is anti-evil, and clean code is perhaps divine.&quot;</strong></p>
+<p>This one comes from the foreword by James O. Coplien. Coplien talks a lot about where our modern principles and workflow in the software development industry comes from: 
+Japanese auto manufacturers. He goes on to say that there's still even more we can learn from the industry, looking at home much time is spent on maintenance vs. 
+manufacturing. Indeed, that's also the case in software development.</p>
+<p>Mr. Coplien has a lot to say on fine details, and how worth it, how righteous it is to focus on them. God is in the details, he believes. He tells us how this book has 
+copious amounts of code and how some might think it odd. <em>Aren't we past looking at code? Shouldn't we talk about concepts and abstractions?</em> &quot;No!&quot; he seems to say.
+This book talks about code because that's where it becomes good, not in the abstraction. He says &quot;Richard Gabriel advises us in his essay, &quot;Abstraction Descant&quot; that
+abstraction is evil. Code is anti-evil, and clean code is perhaps divine.&quot; So this book gets into the nitty-gritty. It shows us code and tears it apart line by line, 
+keyword by keyword because <em>that's</em> how you can write good, clean, divine code. Not by studying grand concepts, but by worrying about the God in the details.</p>
+<p><strong>&quot;And specifying requirements in such detail that a machine can execute them <em>is programming</em>. Such a specification <em>is code</em>.&quot;</strong></p>
+<p>From the section &quot;There Will Be Code&quot;. Martin briefly touches on the notion that some people believe we'll get to a point where we won't need to write code, and
+just how absurd that thought it. If you need to specify exact thoughts and order of operations in some sort of language for a computer to understand, no matter how
+high level that language ends up being, you're still writing code. I was nodding along quite violently to this section because I've read this exact sentiment before.
+I agreed with it in the past, and I agree with it here.</p>
+<p>This quote doesn't really help in the goal of what I want from this book, but I think it's something that bears repeating.</p>
+<p><strong>&quot;<em>Later equals never</em>.&quot;</strong></p>
+<p>LeBlanc's law. Do it right the first time because later will never happen. If it's worth writing, it's worth writing correctly the first time. We are the stewards
+of code, and writing it wrong means we shouldn't have written it at all. </p>
+<p>A few sections later, Martin lists the typical excuses we give as programmers for why we wrote bad code. &quot;I was rushed&quot;, &quot;The requirements changed too much&quot;, &quot;The 
+sales team promised too much&quot;. He proposes: &quot;so what?&quot;, and then poses this question: &quot;what if you were a doctor and had a patient who demanded that you stop all the
+silly hand-washing in preparation for surgery because it was taking too much time?&quot;. We are the doctor, and management/sales/whoever is the patient. We cannot comply
+with this request. As such, we cannot comply with rushing to write bad code, and must defend good code with great passion. Anything else is unprofessional.</p>
+<p><strong>&quot;No matter how elegant it is, no matter how readable and accessible, if it hath not tests, it be unclean.&quot;</strong></p>
+<p>Even if this quote <em>does</em> remind me of Captain Barbossa from <em>Pirates of the Caribbean</em>, it's still correct. Untested code is not good code. It has not gone through
+the gauntlet that tests provide and the introspection that comes from writing tests. I don't have much to say that this quote doesn't say already, so let's get
+to the next quote.</p>
+<p><strong>&quot;...<em>making it easier to read actually makes it easier to write.</em>&quot;</strong></p>
+<p>This comes after Martin talks about how much time we spend reading code versus actually writing it: well over 10 to 1. We're constantly referencing code we've
+already written while writing new code. So, making it easier to read means it's going to be easier to write more later on. It's really a simple concept, but I've
+never really thought that much about it. This quote opened my eyes, and it really made me excited to see what this book has to offer. I really think this one 
+could really sum up everything I've read so far.</p>
+<p>One more quote that I think is really important for the health of whatever project or product we work on.</p>
+<p><strong>&quot;If we all checked-in our code a little cleaner than when we checked it out, the code simply could not rot.&quot;</strong></p>
+<p><em>&quot;...simple could not rot.&quot;</em> I love that. It's so hopeful, definitive, and accurate all at one. He says this right after quoting a rule from the Boy Scouts of
+America: &quot;Leave the campground cleaner than you found it.&quot; Now, having been a Boy Scout myself might make me a sucker for this second to last section of the 
+first chapter, but I think it leaves us with something simple. When we're writing code into an existing class, file, whatever, why can't we just take a few
+minutes to clean up a bit? We don't have to fret over a major change and go bug our manager or anything. No one in code review is going to question why
+you renamed a variable better or simplified an <em>if</em> statement when it pertains to what you're already doing. They might even smirk, nod, and have just a touch
+brighter day knowing their coworker cares.</p>
+<h2 id="summary">Summary</h2>
+<p>This first chapter has me excited to see what's in store for me in the following chapters. I'm ready for the challenge that this book presents, and I plan to
+keep posting as I read more of this book. Even if no one reads this, I think it's important for me to write because it helps me digest what I just read. I've 
+always thought that if you can teach a concept to someone and help them learn it, then that means you understand it as well. So I guess that's what I'm trying
+to do here: teach a ghost of blog reader's past how to write good code, or at least, understand how this book tries to convey it. Martin doesn't promise that
+this book will teach us to write good code. He promises to &quot;show [us] the thought processes of good programmers and the tricks, techniques, and tools that 
+they use.&quot; So maybe I won't teach this ghost to write good code, but maybe I can teach them the same that Martin promises to show us. </p>
+<p>Until next time.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+
+    </div>
+
+    <style>
+    .copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
+}
+</style>
+
+<footer>
+    <div class="content">
+        <br/>
+        <br/>
+        <hr>
+        <p><span class="copyleft">&copy;</span> Copyleft 2023<script>new Date().getFullYear()>2023&&document.write("-"+new Date().getFullYear());</script> Wesley Mauk</p>
+        <p>Do what ever you want with the content on this website. Just credit me.</p>
+    </div>
+</footer> 
+</body>
+
+</html>
